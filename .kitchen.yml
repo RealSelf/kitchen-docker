@@ -11,13 +11,24 @@ provisioner:
 
 platforms:
 - name: ubuntu-14.04
+  driver:
+    use_container_ip: true 
 - name: ubuntu-16.04
+  driver:
+    use_container_ip: true 
 - name: centos-6
+  driver:
+    use_container_ip: true 
 - name: centos-7
+  driver:
+    use_container_ip: true 
 - name: debian-8
+  driver:
+    use_container_ip: true 
 - name: opensuse-42.2
   driver:
     image: opensuse:42.2
+    use_container_ip: true 
 # - name: arch
 #   driver:
 #     image: base/archlinux
@@ -26,6 +37,7 @@ platforms:
   driver:
     image: ubuntu:16.04
     platform: ubuntu
+    use_container_ip: true 
 - name: dockerfile
   driver:
     username: dockerfile

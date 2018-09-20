@@ -482,6 +482,17 @@ Examples:
     net: br3
 ```
 
+### use\_container\_ip
+
+In some CI environments in order to do connections from one docker container to another, this is required so that the built container IP address is used rather than localhost. if you see attempts to connect over and over without successful completion, you probably need this configuration.
+
+Examples:
+
+```yaml
+  use_container_ip: true
+```
+
+
 ## Development
 
 * Source hosted at [GitHub][repo]
