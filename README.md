@@ -484,12 +484,12 @@ Examples:
 
 ### use\_container\_ip
 
-If you find that you need for the ssh connection that kitchen will make to be made to the built container's ip address ( some CI systems work like this ), set this to true.
+In some CI environments in order to do connections from one docker container to another, this is required so that the built container IP address is used rather than localhost. if you see attempts to connect over and over without successful completion, you probably need this configuration.
 
 Examples:
 
 ```yaml
-  use_conatiner_ip: true
+  use_container_ip: true
 ```
 
 
