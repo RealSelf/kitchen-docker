@@ -1,6 +1,6 @@
 # Kitchen-Docker Changelog
 
-## 2.7.1
+## 2.8.0
 
 * Intentional break from kitchen-docker mainline to add use_container_ip feature which allows us to connect using the built container rather than localhost. Required for some CI systems to work.
 
